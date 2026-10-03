@@ -13,7 +13,7 @@ with open("params.yaml") as f:
 
 
 def normalize(images):
-    return images / 255.0
+        return (images - images.min()) / (images.max() - images.min())
 
 
 raw = np.load("data/raw/fashion_mnist.npz")
