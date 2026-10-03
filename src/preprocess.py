@@ -1,5 +1,7 @@
 """Stage 2: normalize pixels to [0, 1] and split a validation set."""
 
+#TESTING
+
 import os
 
 import numpy as np
